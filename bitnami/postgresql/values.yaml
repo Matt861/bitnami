@@ -469,7 +469,7 @@ primary:
   ## @param primary.podSecurityContext.fsGroup Group ID for the pod
   ##
   podSecurityContext:
-    enabled: true
+    enabled: false
     fsGroupChangePolicy: Always
     sysctls: []
     supplementalGroups: []
@@ -923,7 +923,7 @@ readReplicas:
   ## @param readReplicas.podSecurityContext.fsGroup Group ID for the pod
   ##
   podSecurityContext:
-    enabled: true
+    enabled: false
     fsGroupChangePolicy: Always
     sysctls: []
     supplementalGroups: []
@@ -1291,7 +1291,7 @@ backup:
     ## @param backup.cronjob.podSecurityContext.supplementalGroups Set filesystem extra groups
     ## @param backup.cronjob.podSecurityContext.fsGroup Group ID for the CronJob
     podSecurityContext:
-      enabled: true
+      enabled: false
       fsGroupChangePolicy: Always
       sysctls: []
       supplementalGroups: []
